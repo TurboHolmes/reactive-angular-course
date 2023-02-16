@@ -13,7 +13,7 @@ export class CoursesService {
   loadAllCourses(): Observable<Course[]> {
     return this.http.get<{ payload: Course[] }>("/api/courses").pipe(
       map((res) => res["payload"]),
-      shareReplay(1)
+      shareReplay()
     );
   }
 }
