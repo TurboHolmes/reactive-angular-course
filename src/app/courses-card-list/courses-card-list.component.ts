@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { filter, tap } from "rxjs/operators";
 import { CourseDialogComponent } from "../course-dialog/course-dialog.component";
+import { LoadingService } from "../loading/loading.service";
 import { Course } from "../model/course";
 
 @Component({
